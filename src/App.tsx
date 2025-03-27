@@ -160,6 +160,7 @@ function App() {
       nodeTypes={nodeTypes}
       onNodesChange={onNodesChange}
       edges={edges}
+      elevateEdgesOnSelect={true}
       edgeTypes={edgeTypes}
       onEdgesChange={onEdgesChange}
       onConnect={(connection) => {
@@ -211,7 +212,14 @@ function App() {
         >
           layout
         </button>
-        <button onClick={() => console.log(edges, "edges")}>console</button>
+        <button
+          onClick={() => {
+            console.log(nodes, "nodes");
+            console.log(edges, "edges");
+          }}
+        >
+          console
+        </button>
       </Panel>
     </ReactFlow>
   );

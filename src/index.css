@@ -10,3 +10,9 @@ body,
   height: 100%;
   margin: 0;
 }
+/* .react-flow__edge  {
+  z-index: 10000 !important;
+} */
+.react-flow__nodes {
+  z-index: 0 ; /* 节点容器置底 */
+}

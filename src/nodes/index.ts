@@ -6,39 +6,84 @@ import { AppNode } from "./types";
 export const initialNodes: AppNode[] = [
   {
     id: "a",
-    position: { x: 0, y: 0 },
-    data: { label: "start" },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    position: {
+      x: 0,
+      y: 100,
+    },
+    data: {
+      label: "start",
+    },
+    sourcePosition: "right",
+    targetPosition: "left",
+    measured: {
+      width: 150,
+      height: 40,
+    },
   },
   {
     id: "b",
-    position: { x: 200, y: 0 },
-    data: { label: "b" },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    position: {
+      x: 250,
+      y: 0,
+    },
+    data: {
+      label: "b",
+    },
+    sourcePosition: "right",
+    targetPosition: "left",
+    measured: {
+      width: 150,
+      height: 40,
+    },
   },
   {
     id: "c",
-    position: { x: 400, y: 0 },
-    data: { label: "c" },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    position: {
+      x: 500,
+      y: 0,
+    },
+    data: {
+      label: "c",
+    },
+    sourcePosition: "right",
+    targetPosition: "left",
+    measured: {
+      width: 150,
+      height: 40,
+    },
   },
   {
     id: "d",
-    position: { x: 600, y: 0 },
-    data: { label: "d" },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    position: {
+      x: 750,
+      y: 100,
+    },
+    data: {
+      label: "d",
+    },
+    sourcePosition: "right",
+    targetPosition: "left",
+    measured: {
+      width: 150,
+      height: 40,
+    },
   },
   {
     id: "f",
     type: "output",
-    position: { x: 800, y: 0 },
-    data: { label: "f" },
-    sourcePosition: Position.Right,
-    targetPosition: Position.Left,
+    position: {
+      x: 0,
+      y: 240,
+    },
+    data: {
+      label: "f",
+    },
+    sourcePosition: "right",
+    targetPosition: "left",
+    measured: {
+      width: 150,
+      height: 40,
+    },
   },
 ];
 
